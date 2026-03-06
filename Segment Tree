@@ -38,7 +38,7 @@ int query(int node,int b,int e,int l,int r)//O(logn)
     {
         return 0;
     }
-    if(b<=l && e<=r)
+    if(b>=l && e<=r)
     {
         return tree[node];
     }
