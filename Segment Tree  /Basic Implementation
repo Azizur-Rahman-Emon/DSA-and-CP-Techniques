@@ -1,3 +1,4 @@
+```cpp
 // Basic implementation
 #include <bits/stdc++.h>
 using namespace std;
@@ -45,3 +46,4 @@ int query(int node,int b,int e,int l,int r)//O(logn)
     int mid = (b + e) / 2, left = 2 * node, right = 2 * node + 1;
     return query(left,b,mid,l,r)+query(right,mid+1,e,l,r);
 }
+```
