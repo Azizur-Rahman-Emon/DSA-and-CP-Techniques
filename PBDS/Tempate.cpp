@@ -1,15 +1,18 @@
 #include <bits/stdc++.h>
-// use less<T> for set 
-// use less_equal<T> for multiset
-#include<ext/pb_ds/assoc_container.hpp>
-#include<ext/pb_ds/tree_policy.hpp>
-using namespace __gnu_pbds;
+#include <ext/pb_ds/assoc_container.hpp>
+#include <ext/pb_ds/tree_policy.hpp>
 
 using namespace std;
+using namespace __gnu_pbds;
 
-template <typename T> using pbds = tree<T, null_type, less<T>, rb_tree_tag, tree_order_statistics_node_update>;
+// ==========================
+// Ordered Set
+// ==========================
+template<class T>
+using oset = tree<T, null_type, less<T>, rb_tree_tag, tree_order_statistics_node_update>;
 
-int main() {
-
-   return 0;
-}
+// ==========================
+// Ordered Multiset (duplicate support)
+// ==========================
+template<class T>
+using omultiset = tree<pair<T,int>, null_type, less<pair<T,int>>, rb_tree_tag, tree_order_statistics_node_update>;
